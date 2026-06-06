@@ -1,17 +1,50 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>SK Premium Home Services KL</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f6f8;}
+body{font-family:Arial;margin:0;background:#f5f5f5;}
 header{background:#111;color:white;text-align:center;padding:60px;}
-section{padding:20px;max-width:900px;margin:auto;}
-input,select{width:100%;padding:10px;margin:8px 0;}
-button{background:#25D366;color:white;padding:12px;border:0;width:100%;}
-.card{background:white;padding:15px;margin-top:15px;border-radius:10px;}
-.float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50px;}
+section{max-width:900px;margin:auto;padding:20px;}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#25D366;
+color:white;
+border:0;
+font-weight:bold;
+border-radius:6px;
+}
+
+.card{
+background:white;
+padding:15px;
+margin-top:15px;
+border-radius:10px;
+}
+
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+}
 </style>
 </head>
 
@@ -19,12 +52,12 @@ button{background:#25D366;color:white;padding:12px;border:0;width:100%;}
 
 <header>
 <h1>SK Premium Home Services KL</h1>
-<p>Curtains • Electrical • Plumbing</p>
+<p>Curtains • Electrical • Plumbing • Water Heater</p>
 </header>
 
 <section>
 
-<h2>Book Service</h2>
+<h2>Book Your Service</h2>
 
 <input id="name" placeholder="Your Name">
 <input id="area" placeholder="Condo / Area">
@@ -32,45 +65,42 @@ button{background:#25D366;color:white;padding:12px;border:0;width:100%;}
 <select id="service">
 <option>Curtain Installation</option>
 <option>Electrical Work</option>
-<option>Water Heater</option>
-<option>Plumbing</option>
+<option>Plumbing Service</option>
+<option>Water Heater Install</option>
 </select>
 
-<button onclick="send()">Send Request</button>
+<select id="time">
+<option>Today Morning</option>
+<option>Today Evening</option>
+<option>Tomorrow Morning</option>
+<option>Tomorrow Evening</option>
+</select>
+
+<button onclick="book()">Confirm Booking</button>
 
 </section>
 
 <section class="card">
-<h2>Top Condos</h2>
-<p>Helix Residences • Vira Residences • Sunway Serene • Maple Residences</p>
+<h2>We Serve KL Condos</h2>
+<p>Helix Residences • Vira Residences • Sunway Serene • Maple Residences • KLCC • PJ • Cheras</p>
 </section>
 
-<a class="float" href="https://wa.me/60168121996">Chat</a>
+<a class="float" href="https://wa.me/60168121996">WhatsApp</a>
 
 <script>
-function send(){
+function book(){
 
-  let name=document.getElementById("name").value;
-  let area=document.getElementById("area").value;
-  let service=document.getElementById("service").value;
+let name=document.getElementById("name").value;
+let area=document.getElementById("area").value;
+let service=document.getElementById("service").value;
+let time=document.getElementById("time").value;
 
-  let msg = "Hi I am " + name + 
-  " from " + area + 
-  " need " + service;
+let msg="BOOKING REQUEST:%0AName: "+name+"%0AArea: "+area+"%0AService: "+service+"%0ATime: "+time;
 
-  // WhatsApp
-  window.open("https://wa.me/60168121996?text="+encodeURIComponent(msg));
+window.open("https://wa.me/60168121996?text="+msg);
 
-  // CRM SEND (PASTE YOUR SCRIPT URL HERE)
-  fetch("PASTE_YOUR_SCRIPT_URL_HERE", {
-    method:"POST",
-    body: JSON.stringify({
-      name:name,
-      area:area,
-      service:service,
-      message:msg
-    })
-  });
+// CRM + FOLLOWUP READY HO SAKTA HAI (Google Script connect later)
+alert("Booking sent. We will contact you shortly.");
 
 }
 </script>
