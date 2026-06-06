@@ -1,92 +1,59 @@
-To fix the syntax error in your provided HTML code and ensure all your images are correctly referenced, please use the updated code below.
-### Key Corrections Made:
- 1. **Syntax Fix:** Removed the unnecessary closing brace } inside your header's button group, which was preventing the code from rendering correctly.
- 2. **Image Integration:** Verified that all file names provided in your request (such as 1000025780.jpg, 1000025777.jpg, etc.) are correctly placed within the <img> tags to display your installation gallery and design examples.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK Premium Curtain KL | S-Fold • Ring • Singapore Design</title>
-    <meta name="description" content="SK Premium Curtain KL provides modern curtain solutions like S-Fold, Ring, and Singapore Designs with a free site visit across Kuala Lumpur and Petaling Jaya. Packages from RM1000 to RM5000. Professional installation included.">
+    <title>SK Home Services KL | Curtains, Repairs & Installation</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional home services in Kuala Lumpur & PJ. Specializing in S-Fold Curtains, Plumbing, Washing Machine Repair, and Water Heater/Fan installation. Book a free site visit now!">
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fcfcfc; color: #333; line-height: 1.6; }
-        .hero { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('1000025808.jpg'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; padding: 0 20px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; font-weight: 800; text-transform: uppercase; }
-        .hero p { font-size: 1.25rem; margin-bottom: 30px; font-weight: 300; }
-        .offer-bar { background-color: #e67e22; color: white; padding: 10px 0; text-align: center; font-weight: bold; font-size: 1.1rem; width: 100%; }
-        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
-        .card { background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 30px; padding: 30px; }
-        .card h2 { border-bottom: 2px solid #e67e22; padding-bottom: 10px; margin-bottom: 20px; }
-        .curtain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .grid-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-        .gallery-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
-        .pricing-box { background-color: #f7f7f7; border: 2px dashed #3498db; color: #3498db; text-align: center; font-size: 1.5rem; font-weight: bold; padding: 20px; margin: 20px 0; border-radius: 10px; }
-        .btn-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 30px; }
-        .btn { padding: 15px 30px; border: none; border-radius: 30px; font-weight: 700; cursor: pointer; text-decoration: none; text-align: center; min-width: 180px; color: white; }
-        .wa-btn { background-color: #25D366; }
-        .call-btn { background-color: #3498db; }
-        .dp-picture { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #3498db; object-fit: cover; margin-bottom: 10px; }
-        .why-us li::before { content: "✔ "; color: #e67e22; font-weight: bold; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; margin: 0; }
+        .hero { background: #222; color: #fff; padding: 60px 20px; text-align: center; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .service-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #f9f9f9; padding: 20px; border-radius: 10px; border-left: 5px solid #25D366; }
+        .btn { display: inline-block; background: #25D366; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
     </style>
 </head>
 <body>
 
-    <header class="hero">
-        <h1>SK Premium Curtain KL</h1>
-        <p>Your Modern Condo Curtain Specialists</p>
-        <p>S-Fold • Ring Curtain • Singapore Design</p>
-        <p>✨ Free Site Visit in KL & PJ ✨</p>
-        <div class="btn-group">
-            <button class="btn wa-btn" onclick="openWA('Hi, I\'m interested in your curtain designs.')">💬 Get a Free Quote</button>
-            <a href="tel:+60168121996" class="btn call-btn">📞 Call Now</a>
+<div class="hero">
+    <h1>SK Home Services Kuala Lumpur</h1>
+    <p>Your Trusted Experts for Curtains, Repairs, and Installations.</p>
+</div>
+
+<div class="container">
+    <h2>Our Professional Home Services</h2>
+    <div class="service-section">
+        <div class="card">
+            <img src="1000025780.jpg" alt="Curtain Installation">
+            <h3>Curtain Installation</h3>
+            <p>Custom S-Fold, Ring, and Singapore-style curtains for modern KL condos.</p>
         </div>
-    </header>
-
-    <div class="offer-bar">🔥 LIMITED SLOTS AVAILABLE FOR FREE SITE VISITS TODAY! 🔥</div>
-
-    <div class="container">
-        <section class="card">
-            <h2>About SK Premium Curtain KL</h2>
-            <p>SK Premium Curtain KL specializes in supplying and installing modern curtain solutions for high-end condos and residential properties in Kuala Lumpur and Petaling Jaya.</p>
-        </section>
-
-        <section>
-            <h2>Our Modern Curtain Designs</h2>
-            <div class="curtain-grid">
-                <div class="grid-item card"><img src="1000025780.jpg" alt="S-Fold Curtain"><h3>S-Fold Curtains</h3></div>
-                <div class="grid-item card"><img src="1000025777.jpg" alt="Ring Curtain"><h3>Ring Curtains</h3></div>
-                <div class="grid-item card"><img src="1000025792.jpg" alt="Singapore Design"><h3>Singapore Design</h3></div>
-                <div class="grid-item card"><img src="1000025808.jpg" alt="Blackout Curtain"><h3>Premium Blackout</h3></div>
-            </div>
-        </section>
-
-        <section class="card">
-            <h2>Real Installation Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="1000025783.jpg" alt="Gallery 1"></div>
-                <div class="gallery-item"><img src="1000025798.jpg" alt="Gallery 2"></div>
-                <div class="gallery-item"><img src="1000025802.jpg" alt="Gallery 3"></div>
-                <div class="gallery-item"><img src="1000027015.jpg" alt="Gallery 4"></div>
-                <div class="gallery-item"><img src="1000027016.jpg" alt="Gallery 5"></div>
-            </div>
-        </section>
-
-        <section class="card">
-            <h2>Premium Custom Packages</h2>
-            <div class="pricing-box">RM1000 – RM5000</div>
-        </section>
+        <div class="card">
+            <img src="1000025777.jpg" alt="Plumbing Services">
+            <h3>Plumbing Services</h3>
+            <p>Fast repair for pipe leaks, clogged drains, and bathroom fittings in PJ & KL.</p>
+        </div>
+        <div class="card">
+            <img src="1000025792.jpg" alt="Appliance Repair">
+            <h3>Appliance Repairs</h3>
+            <p>Expert washing machine repair and service to keep your home running smoothly.</p>
+        </div>
+        <div class="card">
+            <img src="1000025808.jpg" alt="Heater & Fan Installation">
+            <h3>Installations</h3>
+            <p>Professional Water Heater and Ceiling Fan installation with safety guarantee.</p>
+        </div>
     </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+        <h2>Why Choose Us?</h2>
+        <p>✔ Licensed Experts ✔ Affordable Rates ✔ Serving all KL/PJ Condos ✔ Fast Response</p>
+        <a href="https://wa.me/60168121996?text=Hi, I need home services (Curtains/Plumbing/Repair)." class="btn">💬 WhatsApp Us for a Quote</a>
+    </div>
+</div>
 
-    <script>
-        function openWA(messageBody) {
-            var waNumber = '60168121996';
-            window.open("https://wa.me/" + waNumber + "?text=" + encodeURIComponent("Hi SK Premium Curtain KL, " + messageBody), '_blank');
-        }
-    </script>
 </body>
 </html>
-
-```
