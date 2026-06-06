@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SK Premium Home Services KL</title>
+<title>SK Premium Curtain KL | S-Fold • Ring • Singapore Design</title>
+
+<meta name="description" content="SK Premium Curtain KL provides S-Fold, Ring and Singapore design curtains with free site visit in Kuala Lumpur condos like Helix, Vira, Sunway Serene, KLCC and Cheras.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5;}
-header{background:#111;color:white;text-align:center;padding:60px;}
-section{max-width:900px;margin:auto;padding:20px;}
+body{margin:0;font-family:Arial;background:#f7f7f7;color:#222;}
 
-input,select{
-width:100%;
-padding:10px;
-margin:8px 0;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
-width:100%;
-padding:12px;
-background:#25D366;
+header{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+background-size:cover;
 color:white;
-border:0;
-font-weight:bold;
-border-radius:6px;
+text-align:center;
+padding:80px 20px;
 }
+
+section{max-width:900px;margin:auto;padding:20px;}
 
 .card{
 background:white;
 padding:15px;
-margin-top:15px;
+margin:10px 0;
 border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
-.float{
-position:fixed;
-bottom:20px;
-right:20px;
+button{
+width:100%;
+padding:14px;
 background:#25D366;
-padding:15px;
-border-radius:50px;
 color:white;
-text-decoration:none;
+border:0;
+border-radius:8px;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
 }
 </style>
 </head>
@@ -51,57 +57,81 @@ text-decoration:none;
 <body>
 
 <header>
-<h1>SK Premium Home Services KL</h1>
-<p>Curtains • Electrical • Plumbing • Water Heater</p>
+<h1>SK Premium Curtain KL</h1>
+<p>S-Fold • Ring Curtain • Singapore Design</p>
+<h3>🔥 Free Site Visit in KL Condos</h3>
 </header>
+
+<section class="card">
+<h2>About SK Premium Curtain KL</h2>
+<p>
+SK Premium Curtain KL specializes in modern curtain installation for condos across Kuala Lumpur.  
+We provide S-Fold, Ring Curtain, Singapore design, and blackout solutions with professional installation.
+</p>
+</section>
 
 <section>
 
-<h2>Book Your Service</h2>
+<h2>Our Curtain Types</h2>
 
-<input id="name" placeholder="Your Name">
-<input id="area" placeholder="Condo / Area">
+<div class="grid">
 
-<select id="service">
-<option>Curtain Installation</option>
-<option>Electrical Work</option>
-<option>Plumbing Service</option>
-<option>Water Heater Install</option>
-</select>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+<h3>S-Fold Curtains</h3>
+<p>Modern luxury wave design for condos</p>
+</div>
 
-<select id="time">
-<option>Today Morning</option>
-<option>Today Evening</option>
-<option>Tomorrow Morning</option>
-<option>Tomorrow Evening</option>
-</select>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0">
+<h3>Ring Curtains</h3>
+<p>Classic eyelet smooth sliding system</p>
+</div>
 
-<button onclick="book()">Confirm Booking</button>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d">
+<h3>Singapore Design</h3>
+<p>Minimalist condo style popular in KL & SG</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7">
+<h3>Blackout Curtains</h3>
+<p>Full privacy + heat control</p>
+</div>
+
+</div>
 
 </section>
 
 <section class="card">
 <h2>We Serve KL Condos</h2>
-<p>Helix Residences • Vira Residences • Sunway Serene • Maple Residences • KLCC • PJ • Cheras</p>
+<p>
+Helix Residences • Vira Residences • Sunway Serene • KLCC • Cheras • PJ
+</p>
 </section>
 
-<a class="float" href="https://wa.me/60168121996">WhatsApp</a>
+<section class="card">
+<h2>Why Choose SK Premium Curtain KL</h2>
+<p>
+✔ Free Site Visit<br>
+✔ Professional Installation<br>
+✔ Condo Specialist Team<br>
+✔ S-Fold & Singapore Design Experts<br>
+✔ Affordable Packages RM1000–RM3000
+</p>
+</section>
+
+<section>
+
+<button onclick="go()">💬 Get Free Quote on WhatsApp</button>
+
+</section>
 
 <script>
-function book(){
-
-let name=document.getElementById("name").value;
-let area=document.getElementById("area").value;
-let service=document.getElementById("service").value;
-let time=document.getElementById("time").value;
-
-let msg="BOOKING REQUEST:%0AName: "+name+"%0AArea: "+area+"%0AService: "+service+"%0ATime: "+time;
-
-window.open("https://wa.me/60168121996?text="+msg);
-
-// CRM + FOLLOWUP READY HO SAKTA HAI (Google Script connect later)
-alert("Booking sent. We will contact you shortly.");
-
+function go(){
+let msg="Hi I am interested in SK Premium Curtain KL services (S-Fold / Ring / Singapore design). Please provide free site visit.";
+window.open("https://wa.me/60168121996?text="+encodeURIComponent(msg));
 }
 </script>
 
