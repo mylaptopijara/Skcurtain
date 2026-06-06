@@ -1,104 +1,79 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-  <title>Home Services KL | Curtains | Plumbing | Repair</title>
+<title>SK Premium Home Services KL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Curtain installation, plumbing, washing machine repair, fridge repair and fan installation services in KL & Klang Valley. Fast and affordable home services.">
-
-  <style>
-    body {font-family: Arial; margin:0; background:#fff;}
-    .btn {
-      background:#25D366; color:white; padding:14px 20px;
-      text-decoration:none; border-radius:8px; display:inline-block;
-    }
-    .section {padding:25px;}
-    img {width:100%; border-radius:10px; margin-top:10px;}
-  </style>
+<style>
+body{font-family:Arial;margin:0;background:#f5f6f8;}
+header{background:#111;color:white;text-align:center;padding:60px;}
+section{padding:20px;max-width:900px;margin:auto;}
+input,select{width:100%;padding:10px;margin:8px 0;}
+button{background:#25D366;color:white;padding:12px;border:0;width:100%;}
+.card{background:white;padding:15px;margin-top:15px;border-radius:10px;}
+.float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50px;}
+</style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div style="text-align:center;padding:35px;background:#f5f5f5;">
-  <h1>Home Services in KL & Klang Valley</h1>
-  <p>Curtains • Plumbing • Washing Machine Repair • Fridge • Fan Installation</p>
+<header>
+<h1>SK Premium Home Services KL</h1>
+<p>Curtains • Electrical • Plumbing</p>
+</header>
 
-  <h3 style="color:#25a244;">Fast Service | Affordable Price | Same Day Available</h3>
+<section>
 
-  <a class="btn" href="https://wa.me/60168121996">💬 Get Free Quote</a>
+<h2>Book Service</h2>
 
-  <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
-</div>
+<input id="name" placeholder="Your Name">
+<input id="area" placeholder="Condo / Area">
 
-<!-- SERVICES -->
-<div class="section">
-  <h2>Our Services</h2>
+<select id="service">
+<option>Curtain Installation</option>
+<option>Electrical Work</option>
+<option>Water Heater</option>
+<option>Plumbing</option>
+</select>
 
-  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<button onclick="send()">Send Request</button>
 
-  <ul>
-    <li>🪟 Curtain & Blinds Installation (New Condos)</li>
-    <li>🚰 Plumbing Work (Leak, Sink, Bathroom)</li>
-    <li>🧺 Washing Machine Repair</li>
-    <li>❄️ Fridge Repair</li>
-    <li>🌀 Fan Installation & Repair</li>
-  </ul>
-</div>
+</section>
 
-<!-- CURTAINS -->
-<div class="section" style="background:#fafafa;">
-  <h2>Curtain Installation</h2>
+<section class="card">
+<h2>Top Condos</h2>
+<p>Helix Residences • Vira Residences • Sunway Serene • Maple Residences</p>
+</section>
 
-  <img src="https://images.unsplash.com/photo-1503602642458-232111445657">
+<a class="float" href="https://wa.me/60168121996">Chat</a>
 
-  <p>We install modern curtains for new condos in Bukit Jalil, Cheras, Subang, Puchong & Klang.</p>
-</div>
+<script>
+function send(){
 
-<!-- REPAIR -->
-<div class="section">
-  <h2>Repair & Plumbing Work</h2>
+  let name=document.getElementById("name").value;
+  let area=document.getElementById("area").value;
+  let service=document.getElementById("service").value;
 
-  <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+  let msg = "Hi I am " + name + 
+  " from " + area + 
+  " need " + service;
 
-  <p>Fast repair service for plumbing, washing machine, fridge and fan installation.</p>
-</div>
+  // WhatsApp
+  window.open("https://wa.me/60168121996?text="+encodeURIComponent(msg));
 
-<!-- AREAS -->
-<div class="section" style="background:#fafafa;">
-  <h2>Service Areas</h2>
-  <p>Bukit Jalil • Cheras • KLCC • Subang • Puchong • Klang • PJ</p>
-</div>
+  // CRM SEND (PASTE YOUR SCRIPT URL HERE)
+  fetch("PASTE_YOUR_SCRIPT_URL_HERE", {
+    method:"POST",
+    body: JSON.stringify({
+      name:name,
+      area:area,
+      service:service,
+      message:msg
+    })
+  });
 
-<!-- TRUST -->
-<div class="section">
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>✔ Fast Response</li>
-    <li>✔ Affordable Price</li>
-    <li>✔ Home Visit Available</li>
-    <li>✔ Experienced Technician</li>
-    <li>✔ Free Quote</li>
-  </ul>
-</div>
-
-<!-- CONTACT -->
-<div class="section" style="text-align:center;background:#f5f5f5;">
-  <h2>Contact Us</h2>
-
-  <p>WhatsApp: 016-8121996</p>
-
-  <a class="btn" href="https://wa.me/60168121996">💬 WhatsApp Now</a>
-
-  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
-</div>
-
-<!-- FLOAT BUTTON -->
-<a href="https://wa.me/60168121996"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;">
-💬 Chat
-</a>
+}
+</script>
 
 </body>
 </html>
