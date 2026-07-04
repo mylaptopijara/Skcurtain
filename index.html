@@ -4,202 +4,269 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Curtains KL | Custom Curtains, Blinds & Installation</title>
+<title>Curtains KL | Custom Curtains & Blinds Installation Kuala Lumpur</title>
 
-<meta name="description" content="Custom curtains, blinds & installation in Kuala Lumpur. Free measurement, fast installation, affordable pricing. WhatsApp for instant quote.">
+<meta name="description" content="Custom curtains, zebra blinds & roller blinds in Kuala Lumpur & Selangor. Free measurement, fast installation, WhatsApp instant quote.">
+<meta name="keywords" content="curtains KL, blinds Kuala Lumpur, zebra blinds Malaysia, curtain installation KL">
+
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.skcurtainkl.com/">
 
-<!-- SPEED PRELOAD FOR LOCAL HERO IMAGE -->
-<link rel="preload" as="image" href="curtain1.jpg" fetchpriority="high">
-
-<meta name="geo.region" content="MY-14">
-<meta name="geo.placename" content="Kuala Lumpur">
-
-<meta property="og:title" content="Curtains KL | Custom Curtains & Blinds">
-<meta property="og:description" content="Free measurement, fast installation, WhatsApp quote.">
-<meta property="og:type" content="website">
-
-<!-- LOCAL BUSINESS SCHEMA -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"SK Curtain KL",
-"url":"https://www.skcurtainkl.com",
-"telephone":"+60168121996",
-"priceRange":"$$",
-"address":{
-"@type":"PostalAddress",
-"streetAddress":"5 Lorong PJS 6/4C",
-"addressLocality":"Kuala Lumpur",
-"addressRegion":"Selangor",
-"addressCountry":"MY"
-}
-}
-</script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 body{margin:0;font-family:Poppins,sans-serif;background:#fafafa;color:#222;line-height:1.6}
 
-/* HERO SECTION WITH LOCAL REF IMAGE */
-.hero{
-background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.6)), url('curtain1.jpg') center/cover no-repeat;
-padding:130px 20px;text-align:center;color:#fff;position:relative
+/* 1. URGENCY BAR */
+.urgency-bar {
+    background: #111; color: #fff; text-align: center; 
+    padding: 8px 10px; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.5px; border-bottom: 2px solid #b48a3c;
 }
-.hero-content{position:relative;z-index:2;max-width:800px;margin:auto}
-.hero h1{font-size:40px;font-weight:700;margin:0}
-.hero p{color:#ddd;margin-top:10px;font-size:18px}
+.urgency-bar span { color: #ff4d4d; animation: blink 1.5s infinite; }
+
+@keyframes blink { 50% { opacity: 0; } }
+
+/* HERO SECTION */
+.hero{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+url('curtain1.jpg') center/cover;
+padding:120px 20px;text-align:center;color:#fff
+}
+.hero h1{font-size:45px;margin:0;font-weight:700}
+.hero p{color:#ddd;margin-top:10px;font-size:20px}
 
 .btn{
-background:#b48a3c;color:#fff;padding:14px 24px;
-display:inline-block;margin-top:18px;border-radius:6px;
-text-decoration:none;font-weight:600;transition:0.3s;
-border:none;cursor:pointer
+background:#b48a3c;color:#fff;padding:15px 28px;
+display:inline-block;margin-top:20px;border-radius:6px;
+text-decoration:none;font-weight:700;transition: 0.3s;
+box-shadow: 0 4px 15px rgba(180,138,60,0.4);
+text-transform: uppercase; font-size: 15px;
 }
-.btn:hover{background:#96712f}
+.btn:hover{background:#96712f; transform: translateY(-1px);}
+
+/* TRUST STRIP */
+.trust{
+display:flex;flex-wrap:wrap;justify-content:center;
+gap:12px;padding:18px;background:#fff;font-size:14px;
+box-shadow:0 2px 8px rgba(0,0,0,.04)
+}
+.trust span{background:#f4f1eb;padding:8px 16px;border-radius:20px;font-weight:500}
 
 /* SECTION */
-.section{padding:70px 20px;max-width:1000px;margin:auto;text-align:center}
-h2{margin-bottom:10px;font-weight:700;font-size:28px}
+.section{padding:70px 20px;max-width:1100px;margin:auto;text-align:center}
+.section h2{font-size:32px;margin-bottom:10px;font-weight:700}
+.section h2::after{content:''; display:block; width:50px; height:3px; background:#b48a3c; margin:10px auto 0 auto;}
+.section-desc{color:#666; font-size:16px; margin-bottom:20px;}
 
-/* GRID */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:25px}
-.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.04);border-top:3px solid #b48a3c}
-.card h3{margin-top:0;margin-bottom:10px;font-size:18px}
-.card p{font-size:14px;color:#666;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:40px}
 
-/* LOCAL GALLERY STYLE */
-.gallery img{
-width:100%;border-radius:10px;height:240px;object-fit:cover;box-shadow:0 4px 15px rgba(0,0,0,0.06);display:block;transition:0.3s
+/* FULL IMAGE CARDS */
+.card{
+background:#fff;padding:0 0 25px 0;border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,.06);
+border-top:4px solid #b48a3c;overflow:hidden;
+transition: transform 0.3s ease; text-align:center
 }
-.gallery img:hover{transform:scale(1.02)}
+.card:hover{transform: translateY(-5px);}
+.card img{width:100%;height:200px;object-fit:cover;}
+.card h3{margin:18px 15px 8px 15px;font-size:20px;color:#111}
+.card p{margin:0 15px 15px 15px;color:#666;font-size:14px;min-height:42px}
+.card .card-btn{background:#25D366; color:#fff; padding:10px 20px; border-radius:4px; text-decoration:none; font-weight:700; font-size:14px; display:inline-block; transition: 0.2s;}
+.card .card-btn:hover{background:#1ebd59;}
 
-/* STEPS */
-.steps{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-top:25px}
-.step{background:#fff;padding:15px 25px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.03);font-weight:600;border-left:4px solid #b48a3c}
+/* PROCESS */
+.steps{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:30px}
+.step{background:#fff;padding:20px 30px;border-left:4px solid #b48a3c;box-shadow:0 3px 10px rgba(0,0,0,.04);border-radius:0 8px 8px 0;font-weight:600;font-size:16px}
 
-/* SECURE PAYMENT BOX */
-.payment-box{max-width:450px;margin:30px auto;background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.03);border:1px dashed #b48a3c;text-align:center}
-.qr{width:180px;border:2px solid #0056b3;padding:5px;border-radius:8px;background:#fff;display:block;margin:20px auto}
+/* FAQ STYLE */
+.faq-container{max-width:800px; margin:40px auto; text-align:left;}
+.faq-item{background:#fff; padding:20px; border-radius:8px; margin-bottom:15px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border-left:4px solid #b48a3c;}
+.faq-item h3{margin:0 0 10px 0; font-size:18px; color:#111;}
+.faq-item p{margin:0; color:#555; font-size:14px;}
 
-/* CTA BAR SYSTEM */
+/* MAP WRAPPER */
+.map-responsive{overflow:hidden; padding-bottom:400px; position:relative; height:0; border-radius:10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-top:30px;}
+.map-responsive iframe{left:0; top:0; height:100%; width:100%; position:absolute; border:0;}
+
+/* MOBILE QUICK BOTTOM ACTION BAR */
 .cta{
-position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:999
+position:fixed;bottom:15px;right:15px;display:flex;flex-direction:column;gap:10px;z-index:999
 }
 .cta a{
-background:#25D366;color:#fff;padding:14px 22px;box-shadow:0 4px 12px rgba(0,0,0,0.15);
-border-radius:50px;text-decoration:none;font-weight:600;font-size:14px;transition:0.3s;text-align:center
+background:#25D366;color:#fff;padding:14px 22px;
+border-radius:50px;text-decoration:none;font-weight:700;
+box-shadow:0 4px 12px rgba(0,0,0,.25);text-align:center;
+display:flex; align-items:center; justify-content:center; gap:8px
 }
-.cta a.call-btn{background:#007bff}
+.cta .call{background:#007bff}
 
-/* MAP */
-iframe{width:100%;height:240px;border:0;border-radius:12px;margin-top:20px;box-shadow:0 4px 15px rgba(0,0,0,.02)}
+footer{background:#111;color:#aaa;text-align:center;padding:35px;font-size:14px}
 
-footer{background:#111;color:#fff;text-align:center;padding:30px 20px;font-size:14px;margin-top:60px}
-footer a{color:#b48a3c;text-decoration:none}
-
-/* RESPONSIVE DESIGN CONTROLLER */
 @media(max-width:768px){
 .hero h1{font-size:32px}
 .hero p{font-size:16px}
-.cta{left:0;right:0;bottom:0;flex-direction:row;gap:0}
-.cta a{flex:1;border-radius:0;padding:16px;text-align:center}
-body {padding-bottom:60px}
-.gallery img{height:200px}
+/* STICKY BOTTOM FOR MOBILE ACCORDING TO ADS STANDARD */
+.cta{flex-direction:row;left:0;right:0;bottom:0;gap:0;padding:0}
+.cta a{flex:1;border-radius:0;padding:20px 10px;font-size:16px}
+body{padding-bottom:65px}
+.grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+.grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 
 <body>
 
-<!-- IMAGE 1: HERO BACKGROUND -->
+<!-- 1. TOP DYNAMIC SCARCITY STRIP -->
+<div class="urgency-bar">
+    🔥 ⚡ Running Out Fast: <span>Only 3 Free Measurement Slots Left</span> For This Week in KL & PJ!
+</div>
+
+<!-- HERO MAIN SECTION -->
 <section class="hero">
-<div class="hero-content">
 <h1>Custom Curtains & Blinds in KL</h1>
-<p>Free measurement • Fast installation • WhatsApp instant quote</p>
-<a class="btn" href="https://wa.me/60168121996?text=Hi%20SK%20Curtain%20KL%2C%20I%20want%20to%20book%20a%20free%20measurement." target="_blank">Get Free Quote</a>
-</div>
+<p>Direct Factory Prices • Free Measurement • Installed in 1-3 Days</p>
+<a class="btn" href="https://wa.me/60168121996">⚡ Get Instant Quote Via WhatsApp</a>
 </section>
 
+<!-- BENEFITS STRIP -->
+<div class="trust">
+<span>✔ Free On-Site Measurement</span>
+<span>✔ 1-3 Days Express Delivery</span>
+<span>✔ Direct Factory Rates</span>
+<span>✔ Full Klang Valley Coverage</span>
+</div>
+
+<!-- PRODUCTS SECTION -->
 <section class="section">
-<h2>Why Choose Us</h2>
+<h2>Our Premium Collection</h2>
+<p class="section-desc">Choose premium custom designs tailored precisely to your specific window layout.</p>
 <div class="grid">
-<div class="card"><h3>Free Measurement</h3><p>100% complimentary on-site sizing check.</p></div>
-<div class="card"><h3>Same Week Setup</h3><p>Fast processing and installation within 1-3 days.</p></div>
-<div class="card"><h3>Custom Made</h3><p>Premium factory-direct fabrics for your space.</p></div>
-<div class="card"><h3>KL & Selangor</h3><p>Serving residential & commercial units across the valley.</p></div>
+
+    <!-- Card 1 -->
+    <div class="card">
+    <img src="curtain1.jpg" alt="Premium S-Fold Curtains Kuala Lumpur">
+    <h3>Premium S-Fold Curtains</h3>
+    <p>Elegant flowing waves, perfect for modern luxury living rooms.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+    <img src="blinds1.jpg" alt="Modern Zebra Blinds Petaling Jaya">
+    <h3>Modern Zebra Blinds</h3>
+    <p>Dual-layer fabric design for easy light and privacy control.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+    <img src="curtain2.jpg" alt="100% Blackout Curtains Selangor">
+    <h3>100% Blackout Curtains</h3>
+    <p>Block harsh Malaysian sunlight fully and keep your rooms cool.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+    <img src="blinds2.jpg" alt="Minimalist Roller Blinds KL">
+    <h3>Sleek Roller Blinds</h3>
+    <p>Minimalist and clean window solutions for office and home.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+    <img src="curtain3.jpg" alt="Motorized Smart Curtains Malaysia">
+    <h3>Motorized Curtains</h3>
+    <p>Control your curtains smoothly via remote, phone, or smart home.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+    <img src="blinds3.jpg" alt="Venetian Blinds Office KL">
+    <h3>Venetian Blinds</h3>
+    <p>Classic wooden or aluminum slats for offices and study rooms.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+    <img src="curtain4.jpg" alt="Elegant Sheer Curtains Klang Valley">
+    <h3>Day Sheer Curtains</h3>
+    <p>Soft diffused daylight that adds a romantic touch to bedrooms.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+    <img src="curtain5.jpg" alt="Curtain Track Drilling Setup Services">
+    <h3>Professional Tracks</h3>
+    <p>Heavy-duty curtain tracks and smooth motorized rail installation.</p>
+    <a href="https://wa.me/60168121996" class="card-btn">💬 Instant WhatsApp Quote</a>
+    </div>
+
 </div>
 </section>
 
-<section class="section" style="background:#fff;">
-<h2>How It Works</h2>
+<!-- HOW IT WORKS -->
+<section class="section">
+<h2>3 Simple Steps to Complete Setup</h2>
 <div class="steps">
-<div class="step">1. Contact Us</div>
-<div class="step">2. Free Measurement</div>
-<div class="step">3. Installation</div>
+<div class="step">1. Send Sizes on WhatsApp</div>
+<div class="step">2. Free On-Site Measurement</div>
+<div class="step">3. Complete Setup Within 3 Days</div>
 </div>
 </section>
 
-<!-- LOCAL GALLERY IMAGES (2 TO 5) -->
-<section class="section">
-<h2>Our Work Gallery</h2>
-<p style="margin-bottom:20px;">Real recent curtain and blinds installation projects in Klang Valley.</p>
-<div class="grid gallery">
-<!-- IMAGE 2 -->
-<img src="curtain2.jpg" alt="Bespoke Luxury Curtains KL">
-<!-- IMAGE 3 -->
-<img src="curtain3.jpg" alt="Modern Zebra Blinds Setup">
-<!-- IMAGE 4 -->
-<img src="curtain4.jpg" alt="Living Room Elegant Drapes">
-<!-- IMAGE 5 -->
-<img src="curtain5.jpg" alt="Bedroom Premium Curtain Setup">
+<!-- 2. SEO FAQ MARKUP SECTION -->
+<section class="section" style="background: #fdfdfd;">
+<h2>Frequently Asked Questions</h2>
+<p class="section-desc">Clear answers to help you lock in your order with absolute peace of mind.</p>
+<div class="faq-container">
+    <div class="faq-item">
+        <h3>Is the on-site measurement service 100% free?</h3>
+        <p>Yes. We provide complete layout checks, track inspections, and dynamic itemized fabric pricing across KL & Selangor without charging any diagnostic or base visit fees.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How fast will my curtains or blinds be installed?</h3>
+        <p>Once sizing parameters are approved, custom production takes under 48 hours. The physical installation process takes less than one business day.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Why are your rates significantly lower than retail shops?</h3>
+        <p>We source raw fabrics and operational mechanical components direct-from-factory, omitting middlemen fees to give you direct commercial margins.</p>
+    </div>
 </div>
 </section>
 
-<section class="section">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><h3>Custom Curtains</h3><p>Perfect fitting drapes tailored to your room height.</p></div>
-<div class="card"><h3>Roller & Zebra Blinds</h3><p>Modern architectural blinds with smooth finish.</p></div>
-<div class="card"><h3>Furniture Supply</h3><p>Bespoke custom sofas, smart wardrobes, and bedframes.</p></div>
-<div class="card"><h3>Installation Service</h3><p>Professional track drilling, fixing & handyman work.</p></div>
+<!-- 3. LOCAL SEARCH ENGINE OPTIMIZED MAP SECTION -->
+<section class="section" style="background:#f9f6f0; max-width:100%; width:100%; box-sizing:border-box;">
+<div style="max-width:1000px; margin:auto;">
+<h2>Our Strategic Local Coverage</h2>
+<p class="section-desc">Serving luxury condos, apartments, and corporate complexes across entire Klang Valley region.</p>
+<p><strong>Operational Hours:</strong> Monday - Sunday (9:00 AM - 9:00 PM)</p>
+<div class="map-responsive">
+    <!-- Replace this generic link with your real Business Profile Map embed link when ready -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.436338575084!2d101.61175855!3d3.07891785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d7a18837db5%3A0x673db2f6e522ffdb!2sPetaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1710000000000!5m2!1sen!2smy" allowfullscreen="" loading="lazy"></iframe>
+</div>
 </div>
 </section>
 
-<!-- IMAGE 6: SECURE PAYMENT ALREADY ALIGNED TO YOUR QR NAME -->
-<section class="section" style="background:#fff;">
-<h2>Secure Payment Portal</h2>
-<p>Scan securely using your Touch 'n Go eWallet or Malaysian Mobile Banking Apps.</p>
-<div class="payment-box">
-<img class="qr" src="1000035552.jpg" alt="Touch 'n Go DuitNow National QR SULIMAN">
-<p style="font-weight:600; font-size:15px; color:#0056b3; margin-top:10px;">⚡ DuitNow QR Available (SULIMAN)</p>
-</div>
-</section>
-
-<section class="section">
-<h2>Location</h2>
-<p>5 Lorong PJS 6/4C, Kuala Lumpur, Malaysia</p>
-<iframe src="https://www.google.com/maps?q=5%20Lorong%20PJS%206/4C%20Kuala%20Lumpur&output=embed"></iframe>
-</section>
-
-<section class="section" style="background:#fff;">
-<h2>Start Your Project Today</h2>
-<p>Have questions? Chat with Suliman right now and claim your free measurement slot.</p>
-<a class="btn" href="https://wa.me/60168121996?text=Hi%20SK%20Curtain%20KL%2C%20I%20want%20to%20book%20a%20free%20measurement." target="_blank">Chat on WhatsApp</a>
-</section>
-
-<!-- STICKY BOTTOM BAR FOR MOBILE / FLOATING FOR DESKTOP -->
+<!-- FLOATING CTA BAR FOR HIGHEST AD CLICK-THROUGH CONVERSION -->
 <div class="cta">
-<a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain%20KL%2C%20I%20want%20to%20book%20a%20free%20measurement." target="_blank">WhatsApp Chat</a>
-<a href="tel:+60168121996" class="call-btn">Call Hotline</a>
+<a href="https://wa.me/60168121996" target="_blank">💬 WhatsApp Direct</a>
+<a class="call" href="tel:+60168121996">📞 Call Specialist</a>
 </div>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 SK Curtain KL | Premium Home Solutions Malaysia</p>
-<p>Follow us: <a href="https://www.instagram.com/skcurtainkl" target="_blank">Instagram</a></p>
+© 2026 SK Curtain KL | Custom Curtains & Blinds Malaysia. All Rights Reserved.
 </footer>
 
 </body>
