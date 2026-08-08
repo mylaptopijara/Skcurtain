@@ -10,7 +10,7 @@
 
     <title>SK Curtain KL | Custom Curtains & Blinds in KL & Klang Valley</title>
 
-    <meta name="description" content="Custom-made curtains, S-Fold curtains, sunscreen blinds, zebra blinds and roller blinds in Kuala Lumpur, Selangor and Klang Valley. Free on-site measurement, quotation and professional installation.">
+    <meta name="description" content="Custom-made curtains, S-Fold curtains, blackout blinds, sunscreen blinds, zebra blinds and roller blinds in Kuala Lumpur, Selangor and Klang Valley. Free on-site measurement, quotation and professional installation.">
 
     <link rel="canonical" href="https://www.skcurtainkl.com/">
 
@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://www.skcurtainkl.com/">
     <meta property="og:site_name" content="SK Curtain KL">
     <meta property="og:title" content="SK Curtain KL | Custom Curtains & Blinds in KL & Klang Valley">
-    <meta property="og:description" content="Custom-made curtains, S-Fold curtains, sunscreen blinds and zebra blinds with free on-site measurement and professional installation across Kuala Lumpur, Selangor and Klang Valley.">
+    <meta property="og:description" content="Custom-made curtains, S-Fold curtains, blackout blinds, sunscreen blinds and zebra blinds with free on-site measurement and professional installation across Kuala Lumpur, Selangor and Klang Valley.">
     <meta property="og:image" content="https://www.skcurtainkl.com/custom-made-curtain.webp">
     <meta property="og:image:alt" content="Custom-made curtains installed by SK Curtain KL">
     <meta property="og:image:width" content="1200">
@@ -62,7 +62,7 @@
           "@id": "https://www.skcurtainkl.com/#webpage",
           "url": "https://www.skcurtainkl.com/",
           "name": "SK Curtain KL | Custom Curtains & Blinds in KL & Klang Valley",
-          "description": "Custom-made curtains, S-Fold curtains, sunscreen blinds, zebra blinds and roller blinds in Kuala Lumpur, Selangor and Klang Valley.",
+          "description": "Custom-made curtains, S-Fold curtains, blackout blinds, sunscreen blinds, zebra blinds and roller blinds in Kuala Lumpur, Selangor and Klang Valley.",
           "isPartOf": {
             "@id": "https://www.skcurtainkl.com/#website"
           },
@@ -81,7 +81,8 @@
           "logo": "https://www.skcurtainkl.com/custom-made-curtain.webp",
           "priceRange": "$$",
           "currenciesAccepted": "MYR",
-          "description": "SK Curtain KL provides custom-made curtains, S-Fold curtains, sunscreen blinds, zebra blinds, roller blinds and professional curtain installation across Kuala Lumpur, Selangor and Klang Valley.",
+          "paymentAccepted": "Cash, Bank Transfer (CIMB Bank)",
+          "description": "SK Curtain KL provides custom-made curtains, S-Fold curtains, blackout blinds, sunscreen blinds, zebra blinds, roller blinds and professional curtain installation across Kuala Lumpur, Selangor and Klang Valley.",
           "areaServed": [
             { "@type": "City", "name": "Kuala Lumpur" },
             { "@type": "State", "name": "Selangor" },
@@ -100,6 +101,7 @@
             "itemListElement": [
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom-Made Curtains" } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "S-Fold Curtains" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blackout Blinds" } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sunscreen Blinds" } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zebra Blinds" } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roller Blinds" } },
@@ -120,6 +122,7 @@
           "serviceType": [
             "Custom-Made Curtains",
             "S-Fold Curtains",
+            "Blackout Blinds",
             "Sunscreen Blinds",
             "Zebra Blinds",
             "Roller Blinds",
@@ -193,6 +196,7 @@
             --line: rgba(17,17,17,.08);
             --radius: 18px;
             --ease: cubic-bezier(.2,.8,.2,1);
+            --cimb-red: #7b0f16;
         }
 
         * {
@@ -284,7 +288,7 @@
             z-index: 2;
         }
 
-        /* --- JUMPING LOGO STYLES --- */
+        /* JUMPING LOGO STYLES */
         .brand-logo-wrapper {
             display: inline-block;
             margin-bottom: 25px;
@@ -325,7 +329,6 @@
                 transform: translateY(-14px);
             }
         }
-        /* --------------------------- */
 
         .eyebrow {
             display: inline-flex;
@@ -507,6 +510,80 @@
             border-color: var(--gold);
         }
 
+        /* BANK PAYMENT SECTION */
+        .payment-section {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 40px;
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+
+        .bank-card {
+            background: linear-gradient(135deg, #8B0000 0%, #4A0000 100%);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            margin-top: 20px;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 12px 25px rgba(123, 15, 22, 0.25);
+        }
+
+        .bank-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .bank-title {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            color: #fff;
+        }
+
+        .bank-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .bank-row {
+            margin-bottom: 15px;
+        }
+
+        .bank-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 4px;
+        }
+
+        .bank-value {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+        }
+
+        .bank-acc-num {
+            font-family: monospace;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: var(--gold-light);
+        }
+
         /* PROCESS GRID */
         .process-grid {
             display: grid;
@@ -627,6 +704,8 @@
             .process-grid { grid-template-columns: 1fr; }
             .hero { padding: 80px 6% 60px; }
             .services-grid { grid-template-columns: 1fr; }
+            .payment-section { padding: 25px 18px; }
+            .bank-acc-num { font-size: 20px; }
             .cta-bar {
                 right: 12px;
                 bottom: 12px;
@@ -664,11 +743,12 @@
 <nav class="silo-nav" aria-label="Curtain and blinds services">
     <a href="#custom-curtains">Custom Curtains</a>
     <a href="#sfold-curtains">S-Fold Curtains</a>
+    <a href="#blackout-blinds">Blackout Blinds</a>
     <a href="#sunscreen-blinds">Sunscreen Blinds</a>
     <a href="#zebra-blinds">Zebra Blinds</a>
+    <a href="#payment-info">Payment Info</a>
     <a href="#process">How It Works</a>
     <a href="#faq">FAQ</a>
-    <a href="#service-areas">Service Areas</a>
 </nav>
 
 <!-- HERO HEADER -->
@@ -737,7 +817,19 @@
             </div>
         </article>
 
-        <!-- 3rd Card: Sunscreen Blinds -->
+        <!-- 3rd Card: Blackout Blinds -->
+        <article class="card" id="blackout-blinds">
+            <div class="card-img">
+                <img src="blackout.webp" alt="Blackout roller blinds installed by SK Curtain KL in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+                <h3>Blackout Blinds</h3>
+                <p>100% light-blocking blinds for total privacy, maximum shading, and cooler rooms.</p>
+                <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20pricing%20for%20Blackout%20Blinds." target="_blank" rel="noopener" class="card-link" aria-label="Ask for blackout blind pricing">Ask For Price →</a>
+            </div>
+        </article>
+
+        <!-- 4th Card: Sunscreen Blinds -->
         <article class="card" id="sunscreen-blinds">
             <div class="card-img">
                 <img src="sunscreen-blind.webp" alt="Sunscreen roller blinds installed in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
@@ -749,7 +841,7 @@
             </div>
         </article>
 
-        <!-- 4th Card: Zebra Blinds -->
+        <!-- 5th Card: Zebra Blinds -->
         <article class="card" id="zebra-blinds">
             <div class="card-img">
                 <img src="zebra-window-blinds-kl.webp" alt="Zebra and window blinds installation by SK Curtain KL in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
@@ -762,6 +854,34 @@
         </article>
     </div>
 </main>
+
+<!-- BANK ACCOUNT / PAYMENT SECTION -->
+<section class="section" id="payment-info" style="padding-top: 0;">
+    <div class="payment-section">
+        <div class="section-header" style="margin-bottom: 20px;">
+            <h2>Official Payment Details</h2>
+            <p>For deposits and order payments, please transfer to our official bank account:</p>
+        </div>
+
+        <div class="bank-card">
+            <div class="bank-header">
+                <span class="bank-title">CIMB BANK</span>
+                <span class="bank-badge">Direct Transfer</span>
+            </div>
+            <div class="bank-row">
+                <div class="bank-label">Account Name / Holder</div>
+                <div class="bank-value">SULIMAN</div>
+            </div>
+            <div class="bank-row" style="margin-bottom: 0;">
+                <div class="bank-label">Account Number</div>
+                <div class="bank-acc-num">7657528223</div>
+            </div>
+        </div>
+        <p style="font-size: 12px; color: var(--muted); margin-top: 15px;">
+            * Please send a copy of your transfer receipt via WhatsApp after making the payment.
+        </p>
+    </div>
+</section>
 
 <!-- PROCESS SECTION -->
 <section class="section" id="process" style="padding-top:0;">
