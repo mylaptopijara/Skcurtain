@@ -10,7 +10,7 @@
 
     <title>SK Curtain KL | Custom Curtains & Blinds in KL & Klang Valley</title>
 
-    <meta name="description" content="Custom-made curtains, S-Fold, blackout curtains, zebra and roller blinds in Kuala Lumpur, Selangor and Klang Valley. Free on-site measurement and professional installation.">
+    <meta name="description" content="Custom-made curtains, S-Fold, blackout curtains, sunscreen and zebra blinds in Kuala Lumpur, Selangor and Klang Valley. Free on-site measurement and professional installation.">
 
     <link rel="canonical" href="https://www.skcurtainkl.com/">
 
@@ -112,7 +112,7 @@
             "Custom-Made Curtains",
             "S-Fold Curtains",
             "Blackout Curtains",
-            "Singapore Pleat Curtains",
+            "Sunscreen Blinds",
             "Zebra Blinds",
             "Roller Blinds",
             "Office Blinds",
@@ -333,10 +333,10 @@
             font-size: 15px;
         }
 
-        /* 3 IMAGES SHOWCASE GRID */
+        /* SERVICES SHOWCASE GRID */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
 
@@ -460,7 +460,7 @@
             font-size: 14px;
         }
 
-        /* FLOATING CTA */
+        /* FLOATING CTA & MOVING ANIMATION */
         .cta-bar {
             position: fixed;
             bottom: 20px;
@@ -480,6 +480,23 @@
             box-shadow: 0 8px 20px rgba(0,0,0,.2);
             display: flex;
             align-items: center;
+        }
+
+        /* WhatsApp Animated Class */
+        .cta-bar .whatsapp-btn {
+            animation: bounceGlow 2s infinite ease-in-out;
+        }
+
+        /* Keyframes for Gentle Bounce & Pulse Glow */
+        @keyframes bounceGlow {
+            0%, 100% {
+                transform: translateY(0);
+                box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 25px rgba(37, 211, 102, 0.7);
+            }
         }
 
         .cta-bar .call {
@@ -502,14 +519,13 @@
 
         /* RESPONSIVE */
         @media(max-width:900px) {
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
             .process-grid { grid-template-columns: repeat(2,1fr); }
         }
 
         @media(max-width:600px) {
-            .services-grid { grid-template-columns: 1fr; }
             .process-grid { grid-template-columns: 1fr; }
             .hero { padding: 80px 6% 60px; }
+            .services-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -525,6 +541,8 @@
 <nav class="silo-nav" aria-label="Curtain and blinds services">
     <a href="#custom-curtains">Custom Curtains</a>
     <a href="#sfold-curtains">S-Fold Curtains</a>
+    <a href="#blackout-curtains">Blackout Curtains</a>
+    <a href="#sunscreen-blinds">Sunscreen Blinds</a>
     <a href="#zebra-blinds">Zebra Blinds</a>
     <a href="#process">How It Works</a>
     <a href="#faq">FAQ</a>
@@ -558,7 +576,7 @@
     </div>
 </section>
 
-<!-- MAIN SHOWCASE (THE 3 IMAGES) -->
+<!-- MAIN SHOWCASE -->
 <main id="main-content" class="section">
     <div class="section-header">
         <h2>Custom-Made Curtains &amp; Blinds</h2>
@@ -566,7 +584,7 @@
     </div>
 
     <div class="services-grid">
-        <!-- 1st Image: Custom Curtains -->
+        <!-- 1st Card: Custom Curtains -->
         <article class="card" id="custom-curtains">
             <div class="card-img">
                 <img src="custom-made-curtain.webp" alt="Custom-made curtains installed by SK Curtain KL in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
@@ -578,7 +596,7 @@
             </div>
         </article>
 
-        <!-- 2nd Image: S-Fold Curtains -->
+        <!-- 2nd Card: S-Fold Curtains -->
         <article class="card" id="sfold-curtains">
             <div class="card-img">
                 <img src="s-fold-curtains-kl.webp" alt="Custom-made S-Fold wave curtains installed in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
@@ -590,7 +608,31 @@
             </div>
         </article>
 
-        <!-- 3rd Image: Zebra Blinds -->
+        <!-- 3rd Card: Blackout Curtains -->
+        <article class="card" id="blackout-curtains">
+            <div class="card-img">
+                <img src="blackout.webp" alt="100% Blackout curtains installed in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+                <h3>Blackout Curtains</h3>
+                <p>Block out unwanted sunlight and heat for maximum privacy and optimal sleep comfort.</p>
+                <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20a%20quote%20for%20Blackout%20Curtains." target="_blank" rel="noopener" class="card-link">Get Free Quote →</a>
+            </div>
+        </article>
+
+        <!-- 4th Card: Sunscreen Blinds -->
+        <article class="card" id="sunscreen-blinds">
+            <div class="card-img">
+                <img src="sunscreen-blind.webp" alt="Sunscreen roller blinds installed in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+                <h3>Sunscreen Roller Blinds</h3>
+                <p>Filter natural sunlight and reduce glare while retaining outdoor views for home or office.</p>
+                <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20pricing%20for%20Sunscreen%20Blinds." target="_blank" rel="noopener" class="card-link">Ask For Price →</a>
+            </div>
+        </article>
+
+        <!-- 5th Card: Zebra Blinds -->
         <article class="card" id="zebra-blinds">
             <div class="card-img">
                 <img src="zebra-window-blinds-kl.webp" alt="Window blinds installation by SK Curtain KL in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
@@ -662,9 +704,9 @@
     </p>
 </section>
 
-<!-- FLOATING CTA BUTTONS -->
+<!-- FLOATING CTA BUTTONS (WITH ANIMATED WHATSAPP) -->
 <div class="cta-bar">
-    <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20would%20like%20to%20get%20a%20free%20quote." target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20would%20like%20to%20get%20a%20free%20quote." target="_blank" rel="noopener" class="whatsapp-btn">💬 WhatsApp</a>
     <a href="tel:+60168121996" class="call">📞 Call</a>
 </div>
 
