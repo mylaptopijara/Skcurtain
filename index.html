@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#b48a3c">
+    <meta name="theme-color" content="#171714">
     <meta name="author" content="SK Curtain KL">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
@@ -15,15 +15,12 @@
     <link rel="canonical" href="https://www.skcurtainkl.com/">
 
     <!-- Performance -->
-    <link rel="preload" as="image"
-          href="curtain.jpeg"
-          fetchpriority="high">
+    <link rel="preload" as="image" href="custom-curtains-kuala-lumpur.webp" fetchpriority="high">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -31,7 +28,7 @@
     <meta property="og:site_name" content="SK Curtain KL">
     <meta property="og:title" content="SK Curtain KL | Custom Curtains & Blinds in KL & Klang Valley">
     <meta property="og:description" content="Custom-made curtains and blinds with free on-site measurement and professional installation across Kuala Lumpur, Selangor and Klang Valley.">
-    <meta property="og:image" content="https://www.skcurtainkl.com/curtain.jpeg">
+    <meta property="og:image" content="https://www.skcurtainkl.com/custom-curtains-kuala-lumpur.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_MY">
@@ -40,9 +37,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SK Curtain KL | Custom Curtains & Blinds">
     <meta name="twitter:description" content="Custom-made curtains, blinds, free measurement and professional installation across Klang Valley.">
-    <meta name="twitter:image" content="https://www.skcurtainkl.com/curtain.jpeg">
+    <meta name="twitter:image" content="https://www.skcurtainkl.com/custom-curtains-kuala-lumpur.webp">
 
-    <!-- Structured Data -->
+    <!-- Structured Data (Full Original SEO Schema) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,7 +51,7 @@
           "name": "SK Curtain KL",
           "url": "https://www.skcurtainkl.com/",
           "telephone": "+60168121996",
-          "image": "https://www.skcurtainkl.com/curtain.jpeg",
+          "image": "https://www.skcurtainkl.com/custom-curtains-kuala-lumpur.webp",
           "priceRange": "$$",
           "currenciesAccepted": "MYR",
           "description": "Custom-made curtains and blinds with free on-site measurement and professional installation across Kuala Lumpur, Selangor and Klang Valley.",
@@ -132,8 +129,23 @@
     </script>
 
     <style>
+        :root {
+            --ink: #111111;
+            --ink-soft: #222222;
+            --cream: #f9f8f6;
+            --paper: #ffffff;
+            --gold: #b38a4a;
+            --gold-light: #d7bd88;
+            --muted: #77766f;
+            --line: rgba(17,17,17,.08);
+            --radius: 18px;
+            --ease: cubic-bezier(.2,.8,.2,1);
+        }
+
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         html {
@@ -141,399 +153,285 @@
         }
 
         body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #fafafa;
-            color: #222;
+            font-family: "DM Sans", sans-serif;
+            background: var(--cream);
+            color: var(--ink);
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
         img {
+            display: block;
             max-width: 100%;
             height: auto;
         }
 
         a {
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        :focus-visible {
-            outline: 3px solid #b48a3c;
-            outline-offset: 2px;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #b48a3c;
-            color: #fff;
-            padding: 8px 16px;
-            z-index: 10000;
-            font-weight: 600;
             text-decoration: none;
+            color: inherit;
         }
 
-        .skip-link:focus {
-            top: 0;
+        /* ANNOUNCEMENT BAR */
+        .announcement {
+            background: var(--ink);
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
         }
 
+        .announcement span {
+            color: var(--gold-light);
+        }
+
+        /* SILO NAV */
         .silo-nav {
-            background: #f1eae0;
+            background: #1a1a1a;
             padding: 12px 18px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 18px;
-            border-bottom: 1px solid #e2d7c7;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
         .silo-nav a {
-            color: #5e481f;
-            text-decoration: none;
-            font-weight: 600;
+            color: var(--gold-light);
+            font-weight: 500;
             font-size: 13px;
+            transition: 0.3s;
         }
 
         .silo-nav a:hover {
-            color: #222;
-            text-decoration: underline;
+            color: #fff;
         }
 
-        .hero-container {
-            position: relative;
-            width: 100%;
-            min-height: 500px;
+        /* HERO SECTION */
+        .hero {
+            min-height: 75vh;
+            background: linear-gradient(90deg, rgba(17,17,17,0.92) 0%, rgba(17,17,17,0.65) 50%, rgba(17,17,17,0.2) 100%),
+                        url("custom-curtains-kuala-lumpur.webp") center/cover no-repeat;
+            color: #fff;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            overflow: hidden;
-            background: #1a1a1a;
-        }
-
-        .hero-img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-            filter: brightness(.38);
+            padding: 100px 6% 80px;
+            position: relative;
         }
 
         .hero-content {
+            max-width: 700px;
             position: relative;
             z-index: 2;
-            padding: 70px 20px;
-            max-width: 900px;
-            margin: auto;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gold-light);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 40px;
+            height: 1px;
+            background: var(--gold-light);
         }
 
         .hero h1 {
-            font-size: 40px;
-            margin: 0;
-            font-weight: 700;
-            line-height: 1.25;
-            text-shadow: 0 2px 4px rgba(0,0,0,.3);
+            font-family: "Playfair Display", serif;
+            font-size: clamp(38px, 5.5vw, 68px);
+            line-height: 1.1;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
         }
 
-        .hero p {
-            color: #eee;
-            margin: 16px auto 0;
-            font-size: 17px;
-            max-width: 780px;
+        .hero h1 em {
+            color: var(--gold-light);
         }
 
-        .trust-badge {
-            display: inline-block;
-            background: #fff8e7;
-            border: 1px solid #f3e0b5;
-            border-radius: 8px;
-            padding: 7px 16px;
-            margin-top: 18px;
-            font-weight: 600;
-            font-size: 14px;
-            color: #8a6218;
+        .hero-text {
+            color: rgba(255,255,255,0.8);
+            font-size: 16px;
+            margin-bottom: 35px;
+            max-width: 550px;
         }
 
-        .btn {
-            background: #b48a3c;
+        .btn-gold {
+            display: inline-flex;
+            background: var(--gold);
             color: #fff;
-            padding: 14px 28px;
-            display: inline-block;
-            margin-top: 24px;
-            border-radius: 6px;
-            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 100px;
+            font-size: 14px;
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(180,138,60,.35);
-            transition: transform .2s, background-color .2s;
-            min-height: 48px;
-            line-height: 20px;
+            transition: 0.3s var(--ease);
+            box-shadow: 0 10px 25px rgba(179,138,74,0.2);
         }
 
-        .btn:hover {
-            background: #96712f;
+        .btn-gold:hover {
+            background: #c09a5d;
             transform: translateY(-2px);
         }
 
+        /* TRUST STRIP */
         .trust {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            padding: 18px 20px;
-            background: #fff;
-            font-size: 14px;
-            box-shadow: 0 2px 8px rgba(0,0,0,.04);
+            background: var(--paper);
+            border-bottom: 1px solid var(--line);
+            padding: 22px 20px;
         }
 
-        .trust span {
-            background: #f4f1eb;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        .social-section {
-            background: #fff;
-            padding: 28px 20px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        .social-section h2 {
-            margin: 0;
-            font-size: 19px;
-            color: #333;
-        }
-
-        .social-section p {
-            margin: 5px 0 0;
-            font-size: 13px;
-            color: #666;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 18px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            color: #fff;
-            min-height: 44px;
-        }
-
-        .facebook {
-            background: #1877F2;
-        }
-
-        .instagram {
-            background: linear-gradient(
-                45deg,
-                #f09433,
-                #e6683c,
-                #dc2743,
-                #cc2366,
-                #bc1888
-            );
-        }
-
-        .tiktok {
-            background: #000;
-        }
-
-        .marketplace {
-            background: #4267B2;
-        }
-
-        .section {
-            padding: 55px 20px;
-            max-width: 1100px;
+        .trust-inner {
+            max-width: 1200px;
             margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .trust-inner span {
+            background: var(--cream);
+            padding: 8px 18px;
+            border-radius: 50px;
+            color: var(--ink);
+            border: 1px solid var(--line);
+        }
+
+        /* GENERAL SECTIONS */
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 6%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(32px, 4vw, 46px);
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        /* 3 IMAGES SHOWCASE GRID */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--paper);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            transition: 0.4s var(--ease);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+        }
+
+        .card-img {
+            height: 280px;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.7s var(--ease);
+        }
+
+        .card:hover .card-img img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 30px 25px;
             text-align: center;
         }
 
-        .section h2 {
-            font-size: 30px;
-            margin: 0 0 10px;
-            display: inline-block;
-            font-weight: 700;
-            color: #111;
+        .card-body h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--ink);
         }
 
-        .section h2::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: #b48a3c;
-            margin: 10px auto 0;
+        .card-body p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 20px;
         }
 
-        .section-desc {
-            color: #666;
-            font-size: 15px;
-            max-width: 850px;
-            margin: 0 auto 25px;
+        .card-link {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+            transition: 0.3s;
         }
 
+        .card:hover .card-link {
+            border-color: var(--gold);
+        }
+
+        /* PROCESS GRID */
         .process-grid {
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 20px;
             margin-top: 30px;
-            text-align: left;
         }
 
         .process-step {
-            background: #fff;
+            background: var(--paper);
             padding: 25px;
-            border-radius: 8px;
-            border-left: 4px solid #b48a3c;
-            box-shadow: 0 4px 12px rgba(0,0,0,.04);
+            border-radius: 12px;
+            border-left: 3px solid var(--gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,.03);
         }
 
         .process-step h3 {
-            margin: 0 0 10px;
+            font-family: "Playfair Display", serif;
+            margin-bottom: 10px;
             font-size: 18px;
-            color: #111;
         }
 
         .process-step p {
-            font-size: 14px;
-            color: #555;
-            margin: 0;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: #fff;
-            padding: 0 0 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,.05);
-            border-top: 4px solid #b48a3c;
-            overflow: hidden;
-            text-align: center;
-            transition: transform .25s ease, box-shadow .25s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,.09);
-        }
-
-        .card img {
-            display: block;
-            width: 100%;
-            height: 210px;
-            object-fit: cover;
-            background: #eee;
-        }
-
-        .card h3 {
-            margin: 18px 15px 8px;
-            font-size: 18px;
-            color: #111;
-            font-weight: 600;
-        }
-
-        .card p {
-            margin: 0 15px 15px;
-            color: #666;
-            font-size: 14px;
-            min-height: 42px;
-        }
-
-        .card-btn {
-            background: #f4f1eb;
-            color: #8a6218;
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
             font-size: 13px;
-            display: inline-block;
+            color: var(--muted);
         }
 
-        .card-btn:hover {
-            background: #b48a3c;
-            color: #fff;
-        }
-
-        .gallery-section {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 55px 20px;
-            background: #f4f1eb;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .video-container {
-            max-width: 340px;
-            margin: 25px auto 0;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 18px rgba(0,0,0,.12);
-            background: #000;
-            border: 2px solid #e2d7c7;
-        }
-
-        .video-container video {
-            display: block;
-            width: 100%;
-            aspect-ratio: 9/16;
-            object-fit: cover;
-        }
-
-        .payment-section {
-            background: #fafafa;
-            padding: 55px 20px;
-            text-align: center;
-        }
-
-        .payment-box {
-            background: #fff;
-            max-width: 580px;
-            margin: 20px auto 0;
-            padding: 32px 25px;
-            border-radius: 12px;
-            border: 1px solid #b48a3c;
-            box-shadow: 0 4px 15px rgba(0,0,0,.05);
-        }
-
-        .payment-box h3 {
-            margin: 0 0 10px;
-            color: #8a6218;
-            font-size: 20px;
-        }
-
-        .payment-box p {
-            margin: 0;
-            color: #555;
-            font-size: 14.5px;
-        }
-
+        /* FAQ CONTAINER */
         .faq-container {
             max-width: 850px;
             margin: 30px auto 0;
@@ -541,11 +439,11 @@
         }
 
         .faq-item {
-            background: #fff;
+            background: var(--paper);
             margin-bottom: 12px;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,.03);
-            border-left: 4px solid #b48a3c;
+            border-left: 3px solid var(--gold);
+            border: 1px solid var(--line);
         }
 
         .faq-question {
@@ -553,828 +451,226 @@
             font-weight: 600;
             font-size: 15px;
             cursor: pointer;
-            color: #111;
+            color: var(--ink);
         }
 
         .faq-answer {
             padding: 0 20px 18px;
-            color: #555;
+            color: var(--muted);
             font-size: 14px;
         }
 
-        .map-section {
-            background: #f9f9f9;
-        }
-
-        .map-wrapper {
-            max-width: 1100px;
-            margin: 30px auto 0;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,.05);
-        }
-
-        .map-wrapper iframe {
-            display: block;
-            width: 100%;
-            height: 350px;
-            border: 0;
-        }
-
-        .cta {
+        /* FLOATING CTA */
+        .cta-bar {
             position: fixed;
-            bottom: 15px;
-            right: 15px;
+            bottom: 20px;
+            right: 20px;
             display: flex;
-            flex-direction: column;
             gap: 10px;
             z-index: 999;
         }
 
-        .cta a {
+        .cta-bar a {
             background: #25D366;
             color: #fff;
             padding: 12px 22px;
             border-radius: 50px;
-            text-decoration: none;
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(0,0,0,.25);
-            text-align: center;
-            min-height: 48px;
+            font-size: 14px;
+            box-shadow: 0 8px 20px rgba(0,0,0,.2);
             display: flex;
             align-items: center;
-            justify-content: center;
         }
 
-        .cta .call {
-            background: #b48a3c;
+        .cta-bar .call {
+            background: var(--gold);
         }
 
+        /* FOOTER */
         footer {
-            background: #111;
-            color: #aaa;
+            background: var(--ink);
+            color: #888;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             font-size: 13px;
-        }
-
-        footer p {
-            margin: 5px 0;
+            border-top: 1px solid #333;
         }
 
         footer a {
-            color: #b48a3c;
-            text-decoration: none;
+            color: var(--gold-light);
         }
 
+        /* RESPONSIVE */
         @media(max-width:900px) {
-            .process-grid {
-                grid-template-columns: repeat(2,1fr);
-            }
-
-            .grid {
-                grid-template-columns: repeat(2,1fr);
-            }
-        }
-
-        @media(max-width:768px) {
-
-            .silo-nav {
-                gap: 10px 14px;
-            }
-
-            .silo-nav a {
-                font-size: 12px;
-            }
-
-            .hero-container {
-                min-height: 470px;
-            }
-
-            .hero-content {
-                padding: 60px 18px;
-            }
-
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .hero p {
-                font-size: 14px;
-            }
-
-            .section {
-                padding: 45px 18px;
-            }
-
-            .section h2 {
-                font-size: 25px;
-            }
-
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta {
-                flex-direction: row;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                gap: 0;
-                padding-bottom: env(safe-area-inset-bottom,0px);
-            }
-
-            .cta a {
-                flex: 1;
-                border-radius: 0;
-                padding: 15px 10px;
-                font-size: 15px;
-            }
-
-            body {
-                padding-bottom: calc(
-                    50px + env(safe-area-inset-bottom,0px)
-                );
-            }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-grid { grid-template-columns: repeat(2,1fr); }
         }
 
         @media(max-width:600px) {
-
-            .grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: 26px;
-            }
-
-            .hero-container {
-                min-height: 450px;
-            }
-
-            .trust {
-                padding: 15px 10px;
-            }
-
-            .trust span {
-                font-size: 12px;
-                padding: 7px 11px;
-            }
-
-            .social-btn {
-                font-size: 13px;
-                padding: 9px 14px;
-            }
-        }
-
-        @media(prefers-reduced-motion:reduce) {
-
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: .01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: .01ms !important;
-                scroll-behavior: auto !important;
-            }
+            .services-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .hero { padding: 80px 6% 60px; }
         }
     </style>
 </head>
 
 <body>
 
-<a href="#main-content" class="skip-link">
-    Skip to main content
-</a>
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement">
+    Free On-Site Measurement & Quotation · <span>Kuala Lumpur & Klang Valley</span>
+</div>
 
+<!-- SILO NAV FOR SEO -->
 <nav class="silo-nav" aria-label="Curtain and blinds services">
     <a href="#custom-curtains">Custom Curtains</a>
+    <a href="#sfold-curtains">S-Fold Curtains</a>
     <a href="#zebra-blinds">Zebra Blinds</a>
-    <a href="#blackout-curtains">Blackout Curtains</a>
     <a href="#process">How It Works</a>
-    <a href="#gallery">Our Work</a>
+    <a href="#faq">FAQ</a>
     <a href="#service-areas">Service Areas</a>
 </nav>
 
-<header class="hero-container">
-
-    <img
-        src="curtain.jpeg"
-        alt="Custom-made curtains installed by SK Curtain KL in Kuala Lumpur"
-        class="hero-img"
-        width="1200"
-        height="630"
-        fetchpriority="high"
-        decoding="async">
-
+<!-- HERO HEADER -->
+<header class="hero">
     <div class="hero-content">
-
-        <h1>
-            Custom-Made Curtains &amp; Blinds in Kuala Lumpur, Selangor &amp; Klang Valley
-        </h1>
-
-        <p>
+        <div class="eyebrow">Serving Kuala Lumpur & Klang Valley</div>
+        <h1>Custom-Made Curtains &amp; <em>Blinds in KL.</em></h1>
+        <p class="hero-text">
             Custom-made curtains and blinds with free on-site measurement,
             fabric selection and professional installation for homes,
             condos and offices.
         </p>
-
-        <span class="trust-badge">
-            Serving Kuala Lumpur &amp; Klang Valley
-        </span>
-
-        <br>
-
-        <a
-            href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20to%20book%20a%20free%20on-site%20measurement%20visit."
-            target="_blank"
-            rel="noopener"
-            class="btn"
-            title="Book a free curtain measurement">
+        <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20to%20book%20a%20free%20on-site%20measurement%20visit." target="_blank" rel="noopener" class="btn-gold">
             Book Free Measurement
         </a>
-
     </div>
 </header>
 
-<section class="trust" aria-label="Why choose SK Curtain KL">
-
-    <span>✔ Free On-Site Measurement</span>
-    <span>✔ Fabric Samples at Your Location</span>
-    <span>✔ Custom-Made Curtains &amp; Blinds</span>
-    <span>✔ Professional Installation</span>
-    <span>✔ KL &amp; Klang Valley Coverage</span>
-
+<!-- TRUST STRIP -->
+<section class="trust">
+    <div class="trust-inner">
+        <span>✔ Free On-Site Measurement</span>
+        <span>✔ Fabric Samples at Your Location</span>
+        <span>✔ Custom-Made Curtains &amp; Blinds</span>
+        <span>✔ Professional Installation</span>
+        <span>✔ KL &amp; Klang Valley Coverage</span>
+    </div>
 </section>
 
-<section class="social-section">
-
-    <h2>Follow SK Curtain KL</h2>
-
-    <p>
-        See our latest curtain installations, blinds and completed projects.
-    </p>
-
-    <div class="social-links">
-
-        <a
-            href="https://www.facebook.com/share/1dxhFEUWQG/"
-            target="_blank"
-            rel="noopener"
-            class="social-btn facebook"
-            aria-label="SK Curtain KL on Facebook">
-            📘 Facebook
-        </a>
-
-        <a
-            href="https://www.instagram.com/skcurtainkl"
-            target="_blank"
-            rel="noopener"
-            class="social-btn instagram"
-            aria-label="SK Curtain KL on Instagram">
-            📸 Instagram
-        </a>
-
-        <a
-            href="https://www.tiktok.com/@skcurtainkl.com"
-            target="_blank"
-            rel="noopener"
-            class="social-btn tiktok"
-            aria-label="SK Curtain KL on TikTok">
-            🎵 TikTok
-        </a>
-
-        <a
-            href="https://www.facebook.com/marketplace/profile/100023534471033/"
-            target="_blank"
-            rel="noopener"
-            class="social-btn marketplace"
-            aria-label="SK Curtain KL Marketplace profile">
-            🛒 Marketplace
-        </a>
-
+<!-- MAIN SHOWCASE (THE 3 IMAGES) -->
+<main id="main-content" class="section">
+    <div class="section-header">
+        <h2>Custom-Made Curtains &amp; Blinds</h2>
+        <p>Window treatments for houses, condominiums, apartments, offices and commercial spaces across Kuala Lumpur and Klang Valley.</p>
     </div>
 
-</section>
-
-<main id="main-content">
-
-<section class="section" id="process">
-
-    <h2>How Our Curtain Service Works</h2>
-
-    <p class="section-desc">
-        We make the process simple, from choosing your fabric to final
-        installation. Our team brings physical fabric samples directly
-        to your home or office.
-    </p>
-
-    <div class="process-grid">
-
-        <div class="process-step">
-            <h3>1. Book a Measurement</h3>
-            <p>
-                Contact us through WhatsApp and arrange a convenient
-                time for an on-site window measurement.
-            </p>
-        </div>
-
-        <div class="process-step">
-            <h3>2. Choose Your Style</h3>
-            <p>
-                Compare fabric samples and choose from S-Fold,
-                blackout, sheer, pleated curtains and blinds.
-            </p>
-        </div>
-
-        <div class="process-step">
-            <h3>3. Receive Your Quote</h3>
-            <p>
-                Your quotation is based on measurements, selected
-                fabric, curtain style and track or blind system.
-            </p>
-        </div>
-
-        <div class="process-step">
-            <h3>4. Installation</h3>
-            <p>
-                Once your order is confirmed, the custom-made curtains
-                or blinds are prepared and professionally installed.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section">
-
-    <h2>Custom-Made Curtains &amp; Blinds</h2>
-
-    <p class="section-desc">
-        Window treatments for houses, condominiums, apartments,
-        offices and commercial spaces across Kuala Lumpur and
-        Klang Valley.
-    </p>
-
-    <div class="grid">
-
+    <div class="services-grid">
+        <!-- 1st Image: Custom Curtains -->
         <article class="card" id="custom-curtains">
-
-            <img
-                src="sfold.jpg"
-                alt="Custom-made S-Fold wave curtains installed in Kuala Lumpur"
-                width="300"
-                height="210"
-                loading="lazy"
-                decoding="async">
-
-            <h3>Custom-Made S-Fold Curtains</h3>
-
-            <p>
-                Modern wave-style curtains for living rooms,
-                bedrooms and large windows.
-            </p>
-
-            <a
-                href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20a%20quote%20for%20S-Fold%20Curtains."
-                target="_blank"
-                rel="noopener"
-                class="card-btn">
-                Get Free Quote
-            </a>
-
+            <div class="card-img">
+                <img src="custom-curtains-kuala-lumpur.webp" alt="Custom-made curtains installed by SK Curtain KL in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+                <h3>Custom Curtains</h3>
+                <p>Tailored specifically to match your interior style and precise window dimensions.</p>
+                <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20a%20quote%20for%20Custom%20Curtains." target="_blank" rel="noopener" class="card-link">Get Free Quote →</a>
+            </div>
         </article>
 
+        <!-- 2nd Image: S-Fold Curtains -->
+        <article class="card" id="sfold-curtains">
+            <div class="card-img">
+                <img src="S-fold-curtains-kl.webp" alt="Custom-made S-Fold wave curtains installed in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+                <h3>S-Fold Curtains</h3>
+                <p>Modern continuous wave-style curtains for living rooms, bedrooms and large windows.</p>
+                <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20a%20quote%20for%20S-Fold%20Curtains." target="_blank" rel="noopener" class="card-link">Get Free Quote →</a>
+            </div>
+        </article>
+
+        <!-- 3rd Image: Zebra Blinds -->
         <article class="card" id="zebra-blinds">
-
-            <img
-                src="Sunscreenblind.jpg"
-                alt="Window blinds installation by SK Curtain KL in Kuala Lumpur"
-                width="300"
-                height="210"
-                loading="lazy"
-                decoding="async">
-
-            <h3>Zebra &amp; Window Blinds</h3>
-
-            <p>
-                Stylish window blinds for flexible daylight,
-                privacy and modern window styling.
-            </p>
-
-            <a
-                href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20pricing%20for%20Window%20Blinds."
-                target="_blank"
-                rel="noopener"
-                class="card-btn">
-                Ask For Price
-            </a>
-
-        </article>
-
-        <article class="card" id="blackout-curtains">
-
-            <img
-                src="blind-2.jpg"
-                alt="Blackout curtains for a bedroom in Selangor"
-                width="300"
-                height="210"
-                loading="lazy"
-                decoding="async">
-
-            <h3>Blackout Curtains</h3>
-
-            <p>
-                Designed to reduce sunlight and create a darker,
-                more comfortable bedroom.
-            </p>
-
-            <a
-                href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20Blackout%20Curtains."
-                target="_blank"
-                rel="noopener"
-                class="card-btn">
-                Book Measurement
-            </a>
-
-        </article>
-
-        <article class="card">
-
-            <img
-                src="curtain2.jpg"
-                alt="Double-layer sheer and blackout curtains in Kuala Lumpur"
-                width="300"
-                height="210"
-                loading="lazy"
-                decoding="async">
-
-            <h3>Double Layer Curtains</h3>
-
-            <p>
-                Combine sheer curtains and blackout drapes
-                for flexible privacy and light control.
-            </p>
-
-            <a
-                href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20am%20interested%20in%20Double%20Layer%20Curtains."
-                target="_blank"
-                rel="noopener"
-                class="card-btn">
-                Get Free Quote
-            </a>
-
-        </article>
-
-        <article class="card">
-
-            <img
-                src="Singaporecurtain8.jpg"
-                alt="Singapore pleat custom-made curtains in Malaysia"
-                width="300"
-                height="210"
-                loading="lazy"
-                decoding="async">
-
-            <h3>Singapore Pleat Curtains</h3>
-
-            <p>
-                Clean pleated curtains suitable for bedrooms,
-                apartments and modern homes.
-            </p>
-
-            <a
-                href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20need%20pricing%20for%20Singapore%20Pleat%20Curtains."
-                target="_blank"
-                rel="noopener"
-                class="card-btn">
-                Ask For Price
-            </a>
-
-        </article>
-
-        <article class="card">
-
-            <img
-                src="Sunscreenblind.jpg"
-                alt="Office sunscreen blinds installation in Kuala Lumpur"
-                width="300"
-                height="210"
-                loading="lazy"
-                decoding="async">
-
-            <h3>Office &amp; Commercial Blinds</h3>
-
-            <p>
-                Roller, sunscreen, vertical and Venetian blind
-                solutions for offices and commercial spaces.
-            </p>
-
-            <a
-                href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20need%20a%20quote%20for%20Office%20Blinds."
-                target="_blank"
-                rel="noopener"
-                class="card-btn">
-                Request Quote
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-<section class="gallery-section" id="gallery">
-
-    <h2>Recent Curtain &amp; Blinds Installation Gallery</h2>
-
-    <p class="section-desc">
-        View examples of custom curtain fittings, blinds and designs
-        completed across Klang Valley.
-    </p>
-
-    <div class="grid">
-
-        <article class="card">
-            <img src="curtain-3.jpg"
-                 alt="Modern living room curtain installation in Kuala Lumpur"
-                 width="300"
-                 height="210"
-                 loading="lazy"
-                 decoding="async">
-            <h3>Modern Living Room</h3>
-            <p>Custom-made wave curtains fitted for a residential living room.</p>
-        </article>
-
-        <article class="card">
-            <img src="curtain-6.jpg"
-                 alt="Blackout curtain installation in Petaling Jaya"
-                 width="300"
-                 height="210"
-                 loading="lazy"
-                 decoding="async">
-            <h3>Master Bedroom</h3>
-            <p>Blackout curtains installed for improved light control.</p>
-        </article>
-
-        <article class="card">
-            <img src="curtain1.jpg"
-                 alt="Sheer curtain and track installation in Klang Valley"
-                 width="300"
-                 height="210"
-                 loading="lazy"
-                 decoding="async">
-            <h3>Day Sheer Curtains</h3>
-            <p>Light-filtering sheer curtains with custom track fitting.</p>
-        </article>
-
-        <article class="card">
-            <img src="Singaporepleat.Jpg"
-                 alt="Singapore pleat curtains installed in a condominium"
-                 width="300"
-                 height="210"
-                 loading="lazy"
-                 decoding="async">
-            <h3>Condo Pleat Curtains</h3>
-            <p>Custom-made Singapore pleat curtains for high-rise living.</p>
-        </article>
-
-        <article class="card">
-            <img src="curtain.jpg"
-                 alt="Full-length stylish living room curtains"
-                 width="300"
-                 height="210"
-                 loading="lazy"
-                 decoding="async">
-            <h3>Full Length Drapes</h3>
-            <p>Floor-to-ceiling installation for an elegant look.</p>
-        </article>
-
-        <article class="card">
-            <img src="corner curtain.jpg"
-                 alt="Corner window curtain installation"
-                 width="300"
-                 height="210"
-                 loading="lazy"
-                 decoding="async">
-            <h3>Corner Windows</h3>
-            <p>Specialized track fitting for corner layout windows.</p>
-        </article>
-
-    </div>
-
-</section>
-
-<section class="section"
-         style="background:#fff;border-radius:12px;margin-top:35px;padding:40px 20px;">
-
-    <h2>Watch Our Work in Action</h2>
-
-    <p class="section-desc">
-        Real installation footage from a recent custom-made curtain
-        fitting in Kuala Lumpur.
-    </p>
-
-    <div class="video-container">
-
-        <video
-            controls
-            loop
-            muted
-            playsinline
-            preload="metadata"
-            poster="curtain-3.jpg">
-
-            <source src="video1.mp4" type="video/mp4">
-
-            Your browser does not support HTML5 video.
-
-        </video>
-
-    </div>
-
-</section>
-
-<section class="payment-section">
-
-    <h2>Book Your Free Measurement</h2>
-
-    <div class="payment-box">
-
-        <h3>No Payment Required for Consultation</h3>
-
-        <p>
-            Our on-site measurement visit is completely free.
-            Discuss your preferred curtain or blind style, review
-            physical fabric options and receive a quotation before
-            deciding whether to proceed.
-        </p>
-
-        <a
-            href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20would%20like%20to%20book%20a%20free%20measurement."
-            target="_blank"
-            rel="noopener"
-            class="btn"
-            style="margin-top:18px;">
-            WhatsApp Us Now
-        </a>
-
-    </div>
-
-</section>
-
-<section class="section" id="faq">
-
-    <h2>Frequently Asked Questions</h2>
-
-    <p class="section-desc">
-        Common questions about custom-made curtains, blinds,
-        measurement and installation in Klang Valley.
-    </p>
-
-    <div class="faq-container">
-
-        <details class="faq-item">
-            <summary class="faq-question">
-                How much do custom-made curtains cost in KL?
-            </summary>
-            <div class="faq-answer">
-                Custom-made curtain pricing depends on window measurements,
-                selected fabric, curtain style and track system. Contact
-                SK Curtain KL for a quotation based on your requirements.
+            <div class="card-img">
+                <img src="zebra-window-blinds-kl.webp" alt="Window blinds installation by SK Curtain KL in Kuala Lumpur" width="400" height="300" loading="lazy" decoding="async">
             </div>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">
-                Do you provide free on-site measurement?
-            </summary>
-            <div class="faq-answer">
-                Yes. We provide free on-site measurement visits within
-                our service areas across Kuala Lumpur, Selangor and
-                Klang Valley.
+            <div class="card-body">
+                <h3>Zebra &amp; Window Blinds</h3>
+                <p>Stylish window blinds for flexible daylight, privacy and modern window styling.</p>
+                <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20want%20pricing%20for%20Window%20Blinds." target="_blank" rel="noopener" class="card-link">Ask For Price →</a>
             </div>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">
-                What types of curtains and blinds do you provide?
-            </summary>
-            <div class="faq-answer">
-                We provide S-Fold curtains, Singapore pleat curtains,
-                blackout curtains, double-layer curtains, zebra blinds,
-                roller blinds and office or commercial blinds.
-            </div>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">
-                Do you install curtains after supplying them?
-            </summary>
-            <div class="faq-answer">
-                Yes. We provide curtain and blind installation depending
-                on the selected product and project.
-            </div>
-        </details>
-
-        <details class="faq-item">
-            <summary class="faq-question">
-                Which areas do you cover?
-            </summary>
-            <div class="faq-answer">
-                We serve Kuala Lumpur, Petaling Jaya, Subang Jaya,
-                Shah Alam, Puchong, Cheras, Ampang, Damansara,
-                Klang and nearby Klang Valley areas.
-            </div>
-        </details>
-
+        </article>
     </div>
-
-</section>
-
-<section class="section map-section" id="service-areas">
-
-    <h2>Curtain &amp; Blinds Service Areas</h2>
-
-    <p class="section-desc">
-        We provide on-site measurement, custom-made curtains,
-        blinds and installation services across Kuala Lumpur,
-        Selangor and Klang Valley.
-    </p>
-
-    <p style="font-weight:500;color:#444;">
-        Kuala Lumpur • Petaling Jaya • Subang Jaya • Shah Alam •
-        Puchong • Cheras • Ampang • Damansara • Klang
-    </p>
-
-    <div class="map-wrapper">
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254988.45269784185!2d101.50330107779774!3d3.0416972740922655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49c701efeae7%3A0xe3336710b70d2b38!2sKlang%20Valley%2C%20Selangor!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy"
-            width="100%"
-            height="350"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Klang Valley service area map for SK Curtain KL">
-        </iframe>
-
-    </div>
-
-</section>
-
 </main>
 
-<div class="cta">
+<!-- PROCESS SECTION -->
+<section class="section" id="process" style="padding-top:0;">
+    <div class="section-header">
+        <h2>How Our Curtain Service Works</h2>
+        <p>Simple 4-step process from selection to installation.</p>
+    </div>
 
-    <a
-        href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20would%20like%20to%20get%20a%20free%20quote."
-        target="_blank"
-        rel="noopener"
-        title="Contact SK Curtain KL on WhatsApp">
-        💬 WhatsApp
-    </a>
+    <div class="process-grid">
+        <div class="process-step">
+            <h3>1. Book Measurement</h3>
+            <p>Contact us through WhatsApp and arrange a convenient time for on-site window measurement.</p>
+        </div>
+        <div class="process-step">
+            <h3>2. Choose Style</h3>
+            <p>Compare fabric samples directly at your location.</p>
+        </div>
+        <div class="process-step">
+            <h3>3. Get Quote</h3>
+            <p>Quotation based on precise measurements and chosen fabrics.</p>
+        </div>
+        <div class="process-step">
+            <h3>4. Installation</h3>
+            <p>Custom-made curtains or blinds prepared and professionally fitted.</p>
+        </div>
+    </div>
+</section>
 
-    <a
-        href="tel:+60168121996"
-        class="call"
-        title="Call SK Curtain KL">
-        📞 Call
-    </a>
+<!-- FAQ SECTION FOR SEO -->
+<section class="section" id="faq">
+    <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about custom-made curtains and blinds in Klang Valley.</p>
+    </div>
 
+    <div class="faq-container">
+        <details class="faq-item">
+            <summary class="faq-question">How much do custom-made curtains cost in KL?</summary>
+            <div class="faq-answer">Pricing depends on window measurements, selected fabric, and track system. Contact SK Curtain KL for a direct quote.</div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-question">Do you provide free on-site measurement?</summary>
+            <div class="faq-answer">Yes, free on-site measurement visits across Kuala Lumpur, Selangor, and Klang Valley.</div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-question">Which areas do you cover?</summary>
+            <div class="faq-answer">Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Cheras, Ampang, Damansara, Klang and nearby areas.</div>
+        </details>
+    </div>
+</section>
+
+<!-- SERVICE AREAS FOR SEO -->
+<section class="section" id="service-areas" style="text-align:center;">
+    <h2>Curtain &amp; Blinds Service Areas</h2>
+    <p style="margin-top:15px; color:var(--muted); font-weight:500;">
+        Kuala Lumpur • Petaling Jaya • Subang Jaya • Shah Alam • Puchong • Cheras • Ampang • Damansara • Klang
+    </p>
+</section>
+
+<!-- FLOATING CTA BUTTONS -->
+<div class="cta-bar">
+    <a href="https://wa.me/60168121996?text=Hi%20SK%20Curtain,%20I%20would%20like%20to%20get%20a%20free%20quote." target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a href="tel:+60168121996" class="call">📞 Call</a>
 </div>
 
+<!-- FOOTER -->
 <footer>
-
-    <p>
-        © 2026 SK Curtain KL |
-        Custom-Made Curtains &amp; Blinds in Kuala Lumpur &amp; Klang Valley.
-    </p>
-
-    <p style="margin-top:8px;">
-        Follow Us:
-        <a href="https://www.facebook.com/share/1dxhFEUWQG/"
-           target="_blank"
-           rel="noopener">Facebook</a>
-        |
-        <a href="https://www.instagram.com/skcurtainkl"
-           target="_blank"
-           rel="noopener">Instagram</a>
-        |
-        <a href="https://www.tiktok.com/@skcurtainkl.com"
-           target="_blank"
-           rel="noopener">TikTok</a>
-        |
-        <a href="https://www.facebook.com/marketplace/profile/100023534471033/"
-           target="_blank"
-           rel="noopener">Marketplace</a>
-    </p>
-
+    <p>© 2026 SK Curtain KL | Custom-Made Curtains &amp; Blinds in Kuala Lumpur &amp; Klang Valley.</p>
 </footer>
 
 </body>
