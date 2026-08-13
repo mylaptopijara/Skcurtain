@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-MY">
-<head><head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK Curtain KL</title>
 
-    <!-- Google Verification Code -->
+    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="Bup9mySJwkbQuBxXHMmyaNiiJNrZYBe4zcOHIXrlAQ4" />
-</head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="theme-color" content="#171714">
     <meta name="author" content="SK Curtain KL">
@@ -225,7 +220,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        img {
+        img, video {
             display: block;
             max-width: 100%;
             height: auto;
@@ -444,6 +439,24 @@
         .section-header p {
             color: var(--muted);
             font-size: 15px;
+        }
+
+        /* VIDEO SHOWCASE SECTION */
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 1px solid var(--line);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: cover;
         }
 
         /* SERVICES SHOWCASE GRID */
@@ -790,6 +803,20 @@
         <span>✔ Custom-Made Curtains &amp; Blinds</span>
         <span>✔ Professional Installation</span>
         <span>✔ KL &amp; Klang Valley Coverage</span>
+    </div>
+</section>
+
+<!-- VIDEO SHOWCASE SECTION -->
+<section class="section" id="video-showcase">
+    <div class="section-header">
+        <h2>Watch Our Installation Work</h2>
+        <p>See how our professional curtain installation transforms living spaces.</p>
+    </div>
+    <div class="video-wrapper">
+        <video controls autoplay muted loop playsinline poster="custom-made-curtain.webp">
+            <source src="curtain-install.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </section>
 
