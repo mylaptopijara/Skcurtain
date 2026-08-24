@@ -34,7 +34,6 @@
 {
   "@context":"https://schema.org",
   "@graph":[
-
     {
       "@type":"WebSite",
       "@id":"https://www.skcurtainkl.com/#website",
@@ -42,7 +41,6 @@
       "name":"SK Curtain KL",
       "inLanguage":"en-MY"
     },
-
     {
       "@type":"LocalBusiness",
       "@id":"https://www.skcurtainkl.com/#business",
@@ -65,7 +63,6 @@
         {"@type":"Place","name":"Ampang"}
       ]
     },
-
     {
       "@type":"WebPage",
       "@id":"https://www.skcurtainkl.com/dwitara-residences-curtains.html#webpage",
@@ -76,7 +73,6 @@
       "about":{"@id":"https://www.skcurtainkl.com/#business"},
       "inLanguage":"en-MY"
     },
-
     {
       "@type":"Service",
       "@id":"https://www.skcurtainkl.com/dwitara-residences-curtains.html#service",
@@ -105,12 +101,10 @@
         "Ampang"
       ]
     },
-
     {
       "@type":"FAQPage",
       "@id":"https://www.skcurtainkl.com/dwitara-residences-curtains.html#faq",
       "mainEntity":[
-
         {
           "@type":"Question",
           "name":"Do you provide curtains for Dwitara Residences?",
@@ -119,7 +113,6 @@
             "text":"Yes. SK Curtain KL provides custom made curtains and blinds for Dwitara Residences, Surya PJ South, Petaling Jaya, with free on-site measurement and quotation."
           }
         },
-
         {
           "@type":"Question",
           "name":"Do you sell custom made curtains in KL and Petaling Jaya?",
@@ -128,7 +121,6 @@
             "text":"Yes. We provide made-to-measure curtains and professional installation across Kuala Lumpur, Petaling Jaya and nearby Klang Valley areas."
           }
         },
-
         {
           "@type":"Question",
           "name":"What curtain styles are available?",
@@ -137,7 +129,6 @@
             "text":"Options include custom curtains, S-Fold wave curtains, sheer curtains and blackout curtains using selected fabrics."
           }
         },
-
         {
           "@type":"Question",
           "name":"How much blackout do the curtains provide?",
@@ -146,7 +137,6 @@
             "text":"Our blackout fabric options provide approximately 80–90% light blockage depending on the selected fabric and installation conditions."
           }
         },
-
         {
           "@type":"Question",
           "name":"What types of blinds are available?",
@@ -155,7 +145,6 @@
             "text":"We provide sunscreen roller blinds, zebra blinds and blackout blind options depending on the customer's requirements."
           }
         },
-
         {
           "@type":"Question",
           "name":"Is curtain measurement free?",
@@ -164,7 +153,6 @@
             "text":"Yes. Free on-site measurement and quotation are available for customers within our service areas."
           }
         },
-
         {
           "@type":"Question",
           "name":"Which areas do you serve?",
@@ -173,7 +161,6 @@
             "text":"We serve Kuala Lumpur, Petaling Jaya, Puchong, Bukit Jalil, Bukit Bintang, Sunway, Subang Jaya, Old Klang Road, Cheras, Ampang and nearby Klang Valley areas."
           }
         }
-
       ]
     }
   ]
@@ -385,6 +372,40 @@ font-size:12px;
 font-weight:700;
 text-transform:uppercase;
 letter-spacing:.08em
+}
+
+/* Gallery Styling */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+gap:20px;
+}
+
+.gallery-card{
+background:#fff;
+border-radius:var(--radius);
+overflow:hidden;
+border:1px solid var(--line);
+box-shadow:var(--shadow);
+transition:transform 0.2s ease;
+}
+
+.gallery-card:hover{
+transform:translateY(-4px);
+}
+
+.gallery-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.gallery-card .desc{
+padding:14px;
+font-size:14px;
+font-weight:600;
+text-align:center;
+color:var(--text);
 }
 
 .why{
@@ -810,6 +831,56 @@ Book Measurement →
 </a>
 </div>
 </article>
+
+</div>
+</section>
+
+<!-- S-Fold Blackout Gallery Section -->
+<section class="section">
+
+<div class="section-header">
+<h2>S-Fold Blackout Curtains Collection</h2>
+<p>
+Premium S-Fold blackout curtains installed for optimal light control, privacy and modern interior elegance.
+</p>
+</div>
+
+<div class="gallery-grid">
+
+  <div class="gallery-card">
+    <img src="s-fold-blackout-curtain-living-room.webp" loading="lazy" alt="S-Fold Blackout Curtains Living Room Installation Dwitara Residences">
+    <div class="desc">S-Fold Blackout Living Room</div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="s-fold-wave-blackout-curtain-detail.webp" loading="lazy" alt="S-Fold Wave Blackout Curtain Pleat Detail">
+    <div class="desc">S-Fold Wave Detail</div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="custom-blackout-curtain-bedroom.webp" loading="lazy" alt="Custom Made Blackout Bedroom Curtains Petaling Jaya">
+    <div class="desc">Custom Blackout Elegance</div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="premium-blackout-fabric-texture.webp" loading="lazy" alt="80-90% Blackout High Quality Fabric Texture">
+    <div class="desc">Premium Blackout Fabric</div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="light-blocking-blackout-curtain.webp" loading="lazy" alt="Sunlight Blocking Blackout Curtains For Condos">
+    <div class="desc">80–90% Light Blockage</div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="modern-condo-sfold-blackout-curtains.webp" loading="lazy" alt="Modern Condominium S-Fold Blackout Curtains">
+    <div class="desc">Modern Condominium Blackout</div>
+  </div>
+
+  <div class="gallery-card">
+    <img src="clean-blackout-curtain-track-fitting.webp" loading="lazy" alt="Ceiling Track Fitting for Heavy Blackout Curtains">
+    <div class="desc">Clean Track Installation</div>
+  </div>
 
 </div>
 </section>
