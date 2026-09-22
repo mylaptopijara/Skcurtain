@@ -56,6 +56,9 @@
       "image": "https://www.skcurtainkl.com/custom-made-curtain.webp",
       "priceRange": "$$",
       "description": "Custom made curtains, blinds, home maintenance, plumbing, electrical, waterproofing and handyman services across Kuala Lumpur, Petaling Jaya and Klang Valley.",
+      "sameAs": [
+        "https://maps.app.goo.gl/qymaXu1mGKPwrbgY9"
+      ],
       "areaServed": [
         {"@type":"City","name":"Kuala Lumpur"},
         {"@type":"City","name":"Petaling Jaya"},
@@ -532,6 +535,69 @@ font-size:14px;
 padding-top:12px
 }
 
+/* GOOGLE PROFILE & REVIEW */
+.google-box{
+background:#fff;
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:35px;
+box-shadow:var(--shadow);
+text-align:center;
+max-width:850px;
+margin:auto
+}
+
+.google-stars{
+font-size:28px;
+letter-spacing:3px;
+margin-bottom:10px
+}
+
+.google-box h3{
+font-size:28px;
+margin-bottom:10px
+}
+
+.google-box p{
+color:var(--muted);
+font-size:14px;
+max-width:650px;
+margin:0 auto 22px
+}
+
+.google-buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px
+}
+
+.google-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-height:48px;
+padding:13px 22px;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+transition:.2s
+}
+
+.google-btn:hover{
+transform:translateY(-2px)
+}
+
+.review-btn{
+background:var(--gold);
+color:#fff
+}
+
+.profile-btn{
+background:var(--ink);
+color:#fff
+}
+
 .cta{
 text-align:center;
 background:var(--ink);
@@ -637,6 +703,18 @@ grid-template-columns:1fr 1fr
 grid-template-columns:1fr
 }
 
+.google-box{
+padding:28px 20px
+}
+
+.google-buttons{
+flex-direction:column
+}
+
+.google-btn{
+width:100%
+}
+
 .cta-bar{
 left:12px;
 right:12px;
@@ -657,7 +735,8 @@ scroll-behavior:auto
 }
 
 .btn,
-.gallery-card{
+.gallery-card,
+.google-btn{
 transition:none
 }
 
@@ -1065,6 +1144,59 @@ Looking for a curtain, blind, plumber, electrician or handyman service near you?
 </div>
 
 </div>
+</section>
+
+
+<!-- GOOGLE BUSINESS PROFILE & REVIEWS -->
+
+<section class="section" id="google-profile">
+
+<div class="section-header">
+
+<h2>Google Business Profile &amp; Reviews</h2>
+
+<p>
+Find SK Curtain &amp; Home Maintenance Services on Google and share your experience with us.
+</p>
+
+</div>
+
+<div class="google-box">
+
+<div class="google-stars">
+★★★★★
+</div>
+
+<h3>Handyman service would love your feedback</h3>
+
+<p>
+If you have used our curtain, blind, plumbing, electrical or handyman service, we would appreciate your feedback. Your genuine Google review helps customers learn more about our services.
+</p>
+
+<div class="google-buttons">
+
+<a
+class="google-btn review-btn"
+href="https://g.page/r/CfEJ7MXJ2m0yEBI/review"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Post a Google review for SK Curtain and Home Maintenance Services">
+⭐ Post a Google Review
+</a>
+
+<a
+class="google-btn profile-btn"
+href="https://maps.app.goo.gl/qymaXu1mGKPwrbgY9"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="View SK Curtain and Home Maintenance Services Google Business Profile">
+📍 View Google Business Profile
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 
